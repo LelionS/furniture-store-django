@@ -1,0 +1,25 @@
+<!-- store/templates/store/category_detail.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Detail</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'store/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{{ category.name }}</h1>
+    </header>
+    <main>
+        <p>{{ category.description }}</p>
+        <!-- Add more content related to the category -->
+    </main>
+    <footer>
+        <p>&copy; {{ year }} eCommerce Store. All Rights Reserved.</p>
+    </footer>
+    <script src="{% static 'store/script.js' %}"></script>
+</body>
+</html>
